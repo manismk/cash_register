@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color:#DC2626;
+  --secondary-color:#FECACA;
+  --text-color:#fff;
+  --dark-color:#111;
+}
+
+body{
+  font-family: 'Segoe UI',sans-serif;
+  line-height: 1.4;
+}
+
+.container{
+  background-color: var(--primary-color);
+  max-width: 760px;
+  margin: auto;
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+.container h2{
+  padding: 1rem;
+  
+}
+
+.container a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold ;
+}
+
+.container p{
+  padding-bottom: 2rem;
+}
+.container p:last-child{
+  padding-bottom: 0.5rem;
+}
+
+.container label{
+  font-size: 1.2rem;
+  font-weight: bold;
+ 
+}
+
+.container input[type=number]{
+  background-color: var(--secondary-color);
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.hidden{
+  display: none;
+}
+
+
+.btn{
+  border-radius: 15px;
+  padding: 0.6rem 1.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--text-color);
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background-color: var(--primary-color);
+  color:var(--text-color);
+
+}
+
+.returnDiv table{
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 1rem;  
+  
+}
+
+
+td, th {
+  border: 1px solid var(--dark-color);
+  text-align: center;
+  padding: 0.5rem 2rem;
+}
+
+tr:nth-child(even) {
+  background-color:var(--secondary-color);
+  color: var(--dark-color);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
